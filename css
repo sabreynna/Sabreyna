@@ -1,0 +1,45 @@
+body {
+    position: relative; /* Reference point for absolute positioning */
+    background-color: #008080;
+    font-family: 'MS Sans Serif', Tahoma, Geneva, sans-serif;
+}
+
+.window {
+    width: 300px;
+    border: 2px solid #000;
+    background-color: #C0C0C0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 20px;
+}
+
+.title-bar {
+    background-color: #000080; /* Fixed hex color */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #fff; /* Changed font-color to color */
+}
+
+.close {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    padding: 10px;
+}
+
+#open-button {
+    position: absolute; /* or relative depending on your layout */
+    top: 100px; /* adjust as needed */
+    left: 100px; /* adjust as needed to fit viewport */
+    cursor: pointer; /* keeping the cursor pointer style */
+}
