@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <title>Windows 98 CSS</title>
+</head>
+<body>
+    <img id="open-button" src="https://i.postimg.cc/J0Wt4Rv8/Untitled712-20240921195052.png" alt="Open Window" style="cursor: pointer;  width:80px; height:auto;"> <!-- Image as button -->
+    
+    <div class="window" style="display: none;">
+        <div class="title-bar">
+            <div class="title-bar-text">A Title Bar</div>
+            <button class="close">X</button>
+        </div>
+        <div class="content">
+            <p>Hello, Windows 98!</p>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('open-button').addEventListener('click', function() {
+        document.querySelector('.window').style.display = 'block'; // Show the window
+    });
+
+    document.querySelector('.close').addEventListener('click', function() {
+        document.querySelector('.window').style.display = 'none'; // Hide the window
+    });
+    </script>
+</body>
+</html>
